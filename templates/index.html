@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Monitoring Dashboard</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Network Monitoring Dashboard</h1>
+
+        <!-- Network Statistics Box -->
+        <div class="box" id="stats">
+            <h2>Network Statistics</h2>
+            <p>Bytes Sent: <span id="bytes-sent"></span> GB</p>
+            <p>Bytes Received: <span id="bytes-received"></span> GB</p>
+            <canvas id="networkChart"></canvas>
+        </div>
+
+        <!-- Network Interface Box -->
+        <div class="box" id="network-info">
+            <h2>Network Interface: Ethernet 3</h2>
+            <ul id="network-details"></ul>
+        </div>
+
+        <!-- Advanced CPU Information Box -->
+        <div class="box" id="cpu-advanced-info">
+            <h2>Advanced CPU Information</h2>
+            <p>CPU Temperature: <span id="cpu-temp"></span> °C</p>
+            <p>Per-Core Usage:</p>
+            <ul id="cpu-per-core-list"></ul>
+            <canvas id="cpuChart"></canvas>
+        </div>
+
+        <!-- Bandwidth by Application Box -->
+        <div class="box" id="app-bandwidth">
+            <h2>Bandwidth by Application</h2>
+            <ul id="bandwidth-app-list"></ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
+
